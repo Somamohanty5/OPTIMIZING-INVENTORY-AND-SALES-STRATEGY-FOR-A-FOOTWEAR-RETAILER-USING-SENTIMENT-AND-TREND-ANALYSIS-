@@ -1,14 +1,14 @@
 # Optimizing Inventory and Sales Strategy for a Footwear Retailer
 
-This project leverages advanced Natural Language Processing (NLP) techniques to analyze customer reviews, enabling shoe store owners to make data-driven decisions regarding inventory management, pricing strategies, and product development. By combining sentiment analysis, topic modeling, and trend detection, this project uncovers actionable insights that optimize business outcomes.
+This project leverages advanced Natural Language Processing techniques to analyze customer reviews for providing meaningful insights to shoe store owners about inventory management, pricing strategy, and product development. This project uses the combination of sentiment analysis, topic modeling, and trend detection to reveal actionable insights that drive business outcomes.
 
 ## Features
 
-- **Sentiment Analysis**: Comprehensive analysis using VADER and RoBERTa to detect nuanced customer sentiments.
-- **Trend Analysis**: Insights into yearly brand popularity and customer preferences.
-- **Brand Insights**: Evaluation of brands based on comfort, durability, activity-specific suitability, and customer feedback.
-- **Inventory Recommendations**: Strategies to reduce unsold stock and align inventory with customer demand.
-- **Argument Mining**: Extracting key reasons for sentiment to provide actionable feedback for product improvement.
+Sentiment Analysis: An in-depth evaluation using VADER and RoBERTa to interpret customer emotions with precision, focusing on nuanced feedback across sentiment categories.
+Trend Analysis: A systematic review of brand popularity and customer preferences over time, highlighting shifts in consumer behavior.
+Brand Insights: A detailed assessment of brands, emphasizing attributes such as comfort, durability, purpose-specific suitability, and overall customer satisfaction.
+Inventory Recommendations: Tailored strategies for optimizing inventory, minimizing unsold items, and aligning stock with real-time customer demand patterns.
+Argument Mining: Identification and analysis of core customer feedback points to deliver actionable insights for enhancing product features and addressing areas of concern.
 
 ## Problem Statement
 
@@ -33,11 +33,11 @@ We utilized the [Amazon UK Shoes Product Reviews Dataset](https://data.world/cra
 
 ### Data Preparation
 
-- Retained only English reviews using the `langdetect` library.
-- Extracted brand names from product names for focused analysis.
-- Removed irrelevant columns and rows for a streamlined dataset.
-- Included only verified purchase reviews to ensure reliability.
-- Normalized review dates and extracted yearly trends.
+Filtered reviews to retain only those written in English using the langdetect library.
+Isolated brand names from product titles for a targeted and detailed analysis.
+Streamlined the dataset by removing unnecessary columns and irrelevant rows.
+Focused on verified purchase reviews to ensure the accuracy and reliability of insights.
+Standardized review dates and analyzed yearly trends to uncover evolving patterns.
 
 ### Sentiment Analysis
 
@@ -61,23 +61,23 @@ We utilized the [Amazon UK Shoes Product Reviews Dataset](https://data.world/cra
 
 ### Argument Mining
 
-- Extracted reasons for sentiment from "because" or "cause" phrases in reviews.
-- Performed detailed analysis of slightly positive and slightly negative reviews, identifying factors contributing to these sentiments.
-- Used TF-IDF to rank keywords and derive actionable insights from customer feedback.
+Identified sentiment drivers by extracting phrases containing "because" or "cause" from customer reviews.
+Conducted an in-depth analysis of mildly positive and mildly negative reviews to uncover factors influencing these sentiments.
+Applied TF-IDF to prioritize keywords and extract actionable insights from customer feedback for meaningful improvements.
 
 ## Key Results
 
-- **Sentiment Analysis**:
-  - RoBERTa outperformed VADER in identifying nuanced sentiments.
-  - Hybrid sentiment analysis accurately classified reviews into categories, including "slightly positive" and "slightly negative."
+Sentiment Analysis:
+RoBERTa demonstrated superior performance over VADER in capturing subtle and nuanced sentiments.
+The hybrid approach effectively categorized reviews, including borderline sentiments like "slightly positive" and "slightly negative."
 
-- **Topic Insights**:
-  - Identified topics such as Size/Fitting, Durability, and Comfort.
-  - Mapped topics to activities (e.g., running, walking) for brand-specific analysis.
+Topic Insights:
+Key topics such as Size/Fitting, Durability, and Comfort were identified from customer reviews.
+These topics were linked to specific activities (e.g., running, walking) for a more tailored brand performance evaluation.
 
-- **Argument Mining**:
-  - Extracted positive and negative feedback points for detailed insights.
-  - Identified root causes of customer dissatisfaction and product praise.
+Argument Mining:
+Extracted core positive and negative feedback to provide actionable insights.
+Analyzed underlying causes of customer dissatisfaction and reasons for product appreciation to inform improvements.
 
 ## Installation
 
